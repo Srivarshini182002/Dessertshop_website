@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Shop Menu</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f3ea;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #2c6cac;
+            padding: 10px 0;
+            border-bottom: 2px solid #e2e2e2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            margin-right: 10px;
+            width: 50px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff6347;
+        }
+
+        .about {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .about img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        .menu-section {
+            padding: 50px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .menu-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .menu-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .menu-container h1 span {
+            color: #ff7f50;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: #fafafa;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .menu-item span {
+            display: block;
+            margin: 10px 0;
+            font-size: 16px;
+            align-items: baseline;
+        }
+
+        button {
+            background-color: #ff7f50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #ff5722;
+        }
+
+        .cart-container {
+            margin-top: 20px;
+        }
+
+        .view-cart {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .view-cart:hover {
+            background-color: #555;
+        }
+
+        .menu-item:hover{
+            background-color: lightblue;
+        }
+
+        footer {
+            background: #2c6cac;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="Dessert Delight Logo">
+                <h1>Dessert Delight</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dessert_home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menu-section">
+        <div class="container menu-container">
+            <h1>Dessert <span>Shop</span> Menu</h1>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="./assets/vanilla.png" alt="Vanilla Cupcake">
+                    <span>Vanilla Cupcake</span>
+                    <span><s>Rs 150</s>  100</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/chocolate.png" alt="Chocolate Cake">
+                    <span>Chocolate Cake</span>
+                    <span>Rs 100</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/cherry pie.png" alt="Cherry Pie">
+                    <span>Cherry Pie</span>
+                    <span>Rs 200</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/tart.png" alt="Strawberry Tart">
+                    <span>Strawberry Tart</span>
+                    <span>Rs 150</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/matcha.png" alt="Matcha Latte">
+                    <span>Matcha Latte</span>
+                    <span>Rs 60</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/pudding.png" alt="Pudding">
+                    <span>Pudding</span>
+                    <span>Rs 155</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/raspberry.png" alt="raspberry">
+                    <span>Raspberry Pretzel</span>
+                    <span>Rs 70</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/Gulab jamu .png" alt="jamun">
+                    <span>Gulab Jamun</span>
+                    <span>Rs 80</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/RC.png" alt="rc">
+                    <span>Raspberry Cake</span>
+                    <span>RS 165</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./assets/pancake.jpg" alt="rc">
+                    <span>Pan Cake</span>
+                    <span>RS 165</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="cart-container">
+                <a href="order.html" class="view-cart">View Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dessert Delight. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

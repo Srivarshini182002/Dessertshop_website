@@ -1,0 +1,231 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Shop - Home</title>
+    <style>
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f3ea;
+    color: #333;                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #2c6cac;
+    padding: 10px 0;
+    border-bottom: 2px solid #e2e2e2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff6347;
+}
+
+        .hero {
+            background: url('./assets/cake2.png') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h2 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            max-width: 600px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-primary {
+            padding: 12px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background: #ff6347;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: #e5533e;
+            transform: scale(1.05);
+        }
+
+        .featured-desserts {
+            padding: 60px 20px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .featured-desserts h2 {
+            font-size: 2.8em;
+            margin-bottom: 30px;
+            color: #ff6347;
+        }
+
+        .dessert-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .dessert-item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            margin: 15px;
+            width: calc(30% - 30px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dessert-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .dessert-item h3 {
+            margin: 15px 0 10px;
+            font-size: 1.6em;
+            color: #ff6347;
+        }
+
+        .dessert-item p {
+            margin: 0 15px 20px;
+            color: #666;
+        }
+
+        .dessert-item:hover {
+            background-color: lightblue;
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background:#2c6cac; ;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="Dessert Delight Logo">
+                <h1>Dessert shop</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dessert_home.html">Home</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Dessert Delight</h2>
+        <p>Indulge in a heavenly experience with our exquisite range of desserts, crafted with passion and the finest ingredients.</p>
+        <a href="Menu.html" class="btn-primary">Explore Our Menu</a>
+    </section>
+
+    <section class="featured-desserts">
+        <h2>Our Best Sellers</h2>
+        <div class="dessert-grid">
+            <div class="dessert-item">
+                <img src="./assets/lava.png" alt="Chocolate Lava Cake">
+                <h3>Chocolate Lava Cake</h3>
+                <p>A rich and gooey chocolate cake with a molten center.</p>
+            </div>
+            <div class="dessert-item">
+                <img src="./assets/strawberry.png" alt="Strawberry Cheesecake">
+                <h3>Strawberry Cheesecake</h3>
+                <p>Deliciously creamy cheesecake topped with fresh strawberries.</p>
+            </div>
+            <div class="dessert-item">
+                <img src="./assets/vanilla.png" alt="Vanilla Cupcakes">
+                <h3>Vanilla Cupcakes</h3>
+                <p>Soft and fluffy cupcakes with a classic vanilla flavor.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dessert Delight. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
